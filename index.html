@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/mmenu-light.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <div class="header_content">
+            <div class="header_logo">
+                <a href="index.html"><img src="asset/images/mkyd_header.png" alt="logo"></a>
+            </div>
+            <div class="header_menu">
+                <div class="dmenu_box">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">TOURNAMENT</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search_wrepper">
+                <div class="mmenu_box">
+                    <a href="#mykd_menu" class="mmenuButton"><i class="fa-solid fa-bars"></i></a>
+                    <nav id="mykd_menu">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about_us.html">ABOUT US</a></li>
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="shop.html">SHOP</a></li>
+                            <li><a href="contact_us.html">CONTACT US</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="inputBox lg-ms-3 lg-me-3">
+                    <button type="button" class="btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div class="signup_box">
+                    <button class="bttn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- searchModalStart -->
+<div class="search_modal">
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="modal_form d-flex" role="search">
+                        <input class="form-control searchInput" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- searchModalEnd -->
+
+<div class="banner_section">
+    <div class="bgImg" style="background-image: url('asset/images/header_banner.jpg');">
+        <div class="container">
+            <div class="bannerContent">
+                <div class="bannerHeading">
+                    <h1>STEAMING</h1>
+                </div>
+                <div class="btm_text">
+                    <p>VIDEO GAMES ONLINE</p>
+                </div>
+                <div class="quoet_box">
+                    <button class="bttn">CONTACT US</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="match_resultSec">
+    <div class="bgImg" style="background-image: url('asset/images/result_bg.png');">
+        <div class="container">
+            <div class="result_content">
+                <div class="sub_tittle">
+                    <p>LATEST RESULTS FOR</p>
+                </div>
+                <div class="tittle_box">
+                    <div class="tittle">
+                        <h3>EXPERIENCE JUST FOR</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="relust_tittle">
+                            <p>PREMIER LEAGUE</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="result_holder justify-content-start justify-content-lg-end">
+                            <div class="team">
+                                <h4>BLACK HUNT</h4>
+                                <p class="sub_tittle">$500000</p>
+                            </div>
+                            <div class="team_logo ms-3">
+                                <img src="asset/images/win01.png" alt="win1">
+                            </div>
+                            <div class="final_result">
+                                <h4>WIN</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xxl-4">
+                        <div class="result_holder justify-content-end justify-content-lg-start">
+                            <div class="final_result loss_team">
+                                <h4>2nd</h4>
+                            </div>
+                            <div class="team_logo ms-0 me-3">
+                                <img src="asset/images/win02.png" alt="win1">
+                            </div>
+                            <div class="team">
+                                <h4>BLACK HUNT</h4>
+                                <p class="sub_tittle text-start">$300000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="match_time mt-4 mb-4">
+                            <p>DECEMBER 19, 2021 | 9:50 AM</p>
+                            <h6>GRAND DUBAI</h6>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="bttn">READ MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="asset/js/bootstrap.bundle.min.js"></script>
+<script src="asset/js/mmenu-light.js"></script>
+<script src="asset/js/main.js"></script>
+</body>
+</html>
