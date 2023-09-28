@@ -24,3 +24,63 @@ document.addEventListener(
             });
     }
 );
+
+var swiper = new Swiper('.streamers_slid', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    keyboard: {
+      enabled: true,
+    },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      1400: {
+        slidesPerView: 5,
+      },
+    },
+  });
+
+// var swiper = new Swiper('.mykd_project', {
+//     slidesPerView: 1,
+//     spaceBetween: 10,
+//     keyboard: {
+//       enabled: true,
+//     },
+//     // autoplay: {
+//     //   delay: 2000,
+//     //   disableOnInteraction: false,
+//     // },
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//     },
+//     breakpoints: {
+//       576: {
+//         slidesPerView: 2,
+//       },
+//       768: {
+//         slidesPerView: 3,
+//       },
+//       992: {
+//         slidesPerView: 4,
+//       },
+//       1400: {
+//         slidesPerView: 5,
+//       },
+//     },
+//   });

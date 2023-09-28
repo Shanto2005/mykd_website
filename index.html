@@ -1,161 +1,540 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
     <link rel="stylesheet" href="asset/css/mmenu-light.css">
     <link rel="stylesheet" href="asset/css/style.css">
 
 </head>
+
 <body>
 
-<header id="header">
-    <div class="container">
-        <div class="header_content">
-            <div class="header_logo">
-                <a href="index.html"><img src="asset/images/mkyd_header.png" alt="logo"></a>
-            </div>
-            <div class="header_menu">
-                <div class="dmenu_box">
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">TOURNAMENT</a></li>
-                        <li><a href="#">PAGES</a></li>
-                        <li><a href="#">NEWS</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
+    <header id="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <a href="index.html"><img src="asset/images/mkyd_header.png" alt="logo"></a>
                 </div>
-            </div>
-            <div class="search_wrepper">
-                <div class="mmenu_box">
-                    <a href="#mykd_menu" class="mmenuButton"><i class="fa-solid fa-bars"></i></a>
-                    <nav id="mykd_menu">
+                <div class="header_menu">
+                    <div class="dmenu_box">
                         <ul>
                             <li><a href="index.html">HOME</a></li>
-                            <li><a href="about_us.html">ABOUT US</a></li>
-                            <li><a href="services.html">SERVICES</a></li>
-                            <li><a href="shop.html">SHOP</a></li>
-                            <li><a href="contact_us.html">CONTACT US</a></li>
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">TOURNAMENT</a></li>
+                            <li><a href="#">PAGES</a></li>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">CONTACT</a></li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-                <div class="inputBox lg-ms-3 lg-me-3">
-                    <button type="button" class="btn" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <div class="search_wrepper">
+                    <div class="mmenu_box">
+                        <a href="#mykd_menu" class="mmenuButton"><i class="fa-solid fa-bars"></i></a>
+                        <nav id="mykd_menu">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about_us.html">ABOUT US</a></li>
+                                <li><a href="services.html">SERVICES</a></li>
+                                <li><a href="shop.html">SHOP</a></li>
+                                <li><a href="contact_us.html">CONTACT US</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="inputBox lg-ms-3 lg-me-3">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="signup_box">
+                        <button class="bttn">Sign Up</button>
+                    </div>
                 </div>
-                <div class="signup_box">
-                    <button class="bttn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- searchModalStart -->
+    <div class="search_modal">
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="modal_form d-flex" role="search">
+                            <input class="form-control searchInput" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
+    <!-- searchModalEnd -->
 
-<!-- searchModalStart -->
-<div class="search_modal">
-    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <form class="modal_form d-flex" role="search">
-                        <input class="form-control searchInput" type="search" placeholder="Search"
-                            aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+    <div class="banner_section">
+        <div class="bgImg" style="background-image: url('asset/images/header_banner.jpg');">
+            <div class="container">
+                <div class="bannerContent">
+                    <div class="bannerHeading">
+                        <h1>STEAMING</h1>
+                    </div>
+                    <div class="btm_text">
+                        <p>VIDEO GAMES ONLINE</p>
+                    </div>
+                    <div class="quoet_box">
+                        <button class="bttn">CONTACT US</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- searchModalEnd -->
 
-<div class="banner_section">
-    <div class="bgImg" style="background-image: url('asset/images/header_banner.jpg');">
-        <div class="container">
-            <div class="bannerContent">
-                <div class="bannerHeading">
-                    <h1>STEAMING</h1>
-                </div>
-                <div class="btm_text">
-                    <p>VIDEO GAMES ONLINE</p>
-                </div>
-                <div class="quoet_box">
-                    <button class="bttn">CONTACT US</button>
+    <div class="match_resultSec">
+        <div class="bgImg" style="background-image: url('asset/images/result_bg.png');">
+            <div class="container">
+                <div class="result_content">
+                    <div class="sub_tittle">
+                        <p>LATEST RESULTS FOR</p>
+                    </div>
+                    <div class="tittle_box">
+                        <div class="tittle">
+                            <h3>EXPERIENCE JUST FOR</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="relust_tittle">
+                                <p>PREMIER LEAGUE</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xxl-4">
+                            <div class="result_holder justify-content-start justify-content-lg-end">
+                                <div class="team">
+                                    <h4>BLACK HUNT</h4>
+                                    <p class="sub_tittle">$500000</p>
+                                </div>
+                                <div class="team_logo ms-3">
+                                    <img src="asset/images/win01.png" alt="win1">
+                                </div>
+                                <div class="final_result">
+                                    <h4>WIN</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-xxl-4">
+                            <div class="result_holder justify-content-end justify-content-lg-start">
+                                <div class="final_result loss_team">
+                                    <h4>2nd</h4>
+                                </div>
+                                <div class="team_logo ms-0 me-3">
+                                    <img src="asset/images/win02.png" alt="win1">
+                                </div>
+                                <div class="team">
+                                    <h4>BLACK HUNT</h4>
+                                    <p class="sub_tittle text-start">$300000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div class="match_time mt-4 mb-4">
+                                <p>DECEMBER 19, 2021 | 9:50 AM</p>
+                                <h6>GRAND DUBAI</h6>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="bttn">READ MORE</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="match_resultSec">
-    <div class="bgImg" style="background-image: url('asset/images/result_bg.png');">
-        <div class="container">
-            <div class="result_content">
-                <div class="sub_tittle">
-                    <p>LATEST RESULTS FOR</p>
+    <div class="areaBackgroung" style="background-image: url('asset/images/area_bg02.jpg');">
+        <div class="nft_journey">
+            <div class="container">
+                <div class="nft_content">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                            <div class="nft_holder">
+                                <div class="tittle text-start">
+                                    <h3>THE JOURNEY OF THE <br> NFT SITES</h3>
+                                </div>
+                                <div class="nft_text">
+                                    <p>Gorem npsum dolor sit amet consectetur adipiscing elit. Duis elementum sollici
+                                        tudin augue euismod. Nulla ullamcorper nunc. Morbi pharetra mi tellus mollis
+                                        tincidunt massa venenatis. Etiam lacinia ipsumultrices.</p>
+                                </div>
+                                <div class="nft_count d-flex column-gap-5 mt-3 mt-lg-5">
+                                    <h6>40K <p>MEMBER</p>
+                                    </h6>
+                                    <h6>50K <P>NFT</P>
+                                    </h6>
+                                    <h6>60K <P>ARTIST</P>
+                                    </h6>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5 col-md-3 col-lg-3 col-xl-3">
+                                        <button class="bttn p-2">READ MORE</button>
+                                    </div>
+                                    <div class="col-7 col-md-3 col-lg-5 col-xl-4">
+                                        <div class="tutorial_box d-flex align-items-center">
+                                            <div class="icon_box me-3"><a href="#"><i class="fa-solid fa-play"></i></a>
+                                            </div>
+                                            <div class="text_box"><a href="#">How It Work</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 col-lg-4 col-xl-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 order-first order-lg-0 funfact_col">
+                            <div class="nft_holder">
+                                <div class="funfactBg"
+                                    style="background-image: url('asset/images/fun_fact_shape.png');">
+                                    <div class="funfact_img">
+                                        <img src="asset/images/fun_fact.png" alt="funfact">
+                                    </div>
+                                </div>
+                                <div class="trophy_box">
+                                    <div class="text">
+                                        <h6>TOURNAMENT</h6>
+                                        <P>DEVELOPMENT</P>
+                                    </div>
+                                    <div class="trophy ms-3">
+                                        <img src="asset/images/trophy.png" alt="trophy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tittle_box">
+            </div>
+        </div>
+        <div class="stramesr_section">
+            <div class="container">
+                <div class="streamers_content">
+                    <div class="sub_tittle">
+                        <p>OUR TOP STREAMERS</p>
+                    </div>
                     <div class="tittle">
-                        <h3>EXPERIENCE JUST FOR</h3>
+                        <h3>TOP RATED STREAMERS</h3>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="relust_tittle">
-                            <p>PREMIER LEAGUE</p>
+                    <div class="swiper streamers_slid">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers01.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers04.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers05.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers06.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers07.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers01.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers05.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers06.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers07.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card_content">
+                                    <div class="imgBox">
+                                        <img src="asset/images/streamers01.png" alt="">
+                                        <div class="inner_box"></div>
+                                    </div>
+                                    <div class="content">
+                                        <h6>BREAMSTONE</h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xxl-4">
-                        <div class="result_holder justify-content-start justify-content-lg-end">
-                            <div class="team">
-                                <h4>BLACK HUNT</h4>
-                                <p class="sub_tittle">$500000</p>
-                            </div>
-                            <div class="team_logo ms-3">
-                                <img src="asset/images/win01.png" alt="win1">
-                            </div>
-                            <div class="final_result">
-                                <h4>WIN</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-xxl-4">
-                        <div class="result_holder justify-content-end justify-content-lg-start">
-                            <div class="final_result loss_team">
-                                <h4>2nd</h4>
-                            </div>
-                            <div class="team_logo ms-0 me-3">
-                                <img src="asset/images/win02.png" alt="win1">
-                            </div>
-                            <div class="team">
-                                <h4>BLACK HUNT</h4>
-                                <p class="sub_tittle text-start">$300000</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center">
-                        <div class="match_time mt-4 mb-4">
-                            <p>DECEMBER 19, 2021 | 9:50 AM</p>
-                            <h6>GRAND DUBAI</h6>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center">
-                        <button class="bttn">READ MORE</button>
+                        <div class="swiper-pagination slide_pagi"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="asset/js/bootstrap.bundle.min.js"></script>
-<script src="asset/js/mmenu-light.js"></script>
-<script src="asset/js/main.js"></script>
+    <div class="match_section">
+        <div class="bg_img" style="background-image: url('asset/images/match_bg.jpg');">
+            <div class="container">
+                <div class="sub_tittle">
+                    <p>MATCHES LIST</p>
+                </div>
+                <div class="tittle">
+                    <h3>UPCOMING MATCHES</h3>
+                </div>
+                <div class="match_content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="project_section">
+        <div class="container">
+            <div class="project_content">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="protect_tittle">
+                            <h3>PROJECTS MYKD</h3>
+                        </div>
+                        <div class="sub_tittle">
+                            OUR LATEST GALLERY
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="swiper mykd_project">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <a href="#">
+                                            <img src="asset/images/project_01.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <a href="#">
+                                            <img src="asset/images/project_02.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <a href="#">
+                                            <img src="asset/images/project_03.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <a href="#">
+                                            <img src="asset/images/project_04.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <a href="#">
+                                            <img src="asset/images/project_05.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <a href="#">
+                                            <img src="asset/images/project_06.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <a href="#">
+                                            <img src="asset/images/project_07.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img_box">
+                                        <a href="#">
+                                            <img src="asset/images/project_08.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination slide_pagi"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="social_section">
+        <div class="bgImg" style="background-image: url('asset/images/social_bg.png');">
+            <div class="container">
+                <div class="social_content">
+                    <div class="sub_tittle">
+                        <p>CONNECT WITH US</p>
+                    </div>
+                    <div class="tittle">
+                        <h3>STAY CONNECTED</h3>
+                    </div>
+                    <div class="row row-gap-4 social_row">
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                           <div class="social_hc">
+                                <div class="social_holder">
+                                    <div class="icon_box">
+                                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                    <div class="sub_tittle">
+                                        <a href="#">FACEBOOK</a>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="social_hc">
+                                <div class="social_holder">
+                                    <div class="icon_box">
+                                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                    <div class="sub_tittle">
+                                        <a href="#">TWITTER</a>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="social_hc">
+                                <div class="social_holder">
+                                    <div class="icon_box">
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                    <div class="sub_tittle">
+                                        <a href="#">INSTAGRAM</a>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="social_hc">
+                                <div class="social_holder">
+                                    <div class="icon_box">
+                                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                    <div class="sub_tittle">
+                                        <a href="#">YOUTUBE</a>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="social_hc">
+                                <div class="social_holder">
+                                    <div class="icon_box">
+                                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                    </div>
+                                    <div class="sub_tittle">
+                                        <a href="#">DISCORD</a>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+                            <div class="social_hc">
+                                <div class="social_holder">
+                                    <div class="icon_box">
+                                        <a href="#"><i class="fa-brands fa-twitch"></i></a>
+                                    </div>
+                                    <div class="sub_tittle">
+                                        <a href="#">TWITCH</a>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/mmenu-light.js"></script>
+    <script src="asset/js/main.js"></script>
 </body>
+
 </html>

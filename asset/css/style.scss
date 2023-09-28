@@ -96,7 +96,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 800;
     @include minwidth(768px) {
         font-size: 32px;
@@ -110,7 +110,7 @@ h4,
 .h4 {
     font-size: 20px;
     @include minwidth(992px){
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
@@ -275,8 +275,8 @@ th {
     }
 }
 .container {
-    @include minwidth(1600px) {
-        max-width: 1580px;
+    @include minwidth(1400px) {
+        max-width: 1300px;
     }
 }
 
@@ -288,6 +288,11 @@ header{
     padding: 20px 0px;
     background-color: #182029;
     z-index: 9999;
+    .container{
+        @include minwidth(1600px){
+            max-width: 1580px;
+        }
+    }
     .header_content{
         display: flex;
         justify-content: space-between;
@@ -553,5 +558,276 @@ header{
         h6{
             letter-spacing: 2px;
         }
+    }
+}
+.areaBackgroung{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0px 60px;
+    @include minwidth(768px){
+        padding: 50px 0px;
+    }
+    @include minwidth(992px){
+        padding: 80px 0px;
+    }
+    @include minwidth(1200px){
+        padding: 190px 0px;
+    }
+}
+.nft_journey{
+    .tittle{
+        &::before{
+            left: 25px;
+        }
+    }
+    p{
+        color: #adb0bc;
+    }
+    .nft_text{
+        margin-top: 30px;
+        @include minwidth(992px){
+            margin-top: 60px;
+        }
+    }
+    .nft_count{
+        h6{
+            font-size: 20px;
+            @include minwidth(768px){
+                font-size: 30px;
+            }
+        }
+        P{
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    .tutorial_box{
+        .icon_box{
+            width: 46px;
+            height: 46px;
+            border: 2px solid $secondaryColor;
+            background-color: transparent;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+            &:hover{
+                background-color: $primaryColor;
+                border: 2px solid $primaryColor;
+                i{
+                    color: #000;
+                }
+            }
+        }
+        i{
+            color: $primaryColor;
+        }
+        a{
+            color: $secondaryColor;
+            text-decoration: none;
+        }
+    }
+    .funfact_col{
+        @include maxwidth(991px){
+            width: 511px;
+            margin: auto;
+        }
+    }
+    .funfactBg{
+        background-repeat: no-repeat;
+        max-width: 511px;
+        @include minwidth(1200px){
+            margin-left: 115px;
+        }
+    }
+    .funfact_img{
+        width: 180px;
+        transform: translateX(60px) translateY(0px);
+        @include minwidth(576px){
+            width: 250px;
+        }
+        @include minwidth(992px){
+            width: 350px;
+            transform: translateX(60px) translateY(-68px);
+        }
+    }
+    .trophy_box{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        transform: translateX(-26px) translateY(15px);
+        @include minwidth(992px){
+            transform: translateY(-40px);
+        }
+        h6{
+            font-size: 16px;
+            @include minwidth(992px){
+                font-size: 20px;
+            }
+        }
+        p{
+            margin-bottom: 0px;
+            font-size: 14px;
+            text-align: end;
+        }
+    }
+    .trophy{
+        width: 40px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url('../images/trophy_color.png');
+            left: 50%;
+            top: -15px;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+        }
+    }
+}
+.stramesr_section{
+    padding-top: 80px;
+    @include minwidth(1200px){
+        padding-top: 130px;
+    }
+    @include minwidth(1600px){
+        padding-top: 310px;
+    }
+    .streamers_slid{
+        overflow-y: unset;
+        padding-top: 50px;
+        @include maxwidth(575px){
+            width: 200px;
+        }
+    }
+    .swiper-pagination{
+        bottom: -35px;
+        color: $secondaryColor;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: $primaryColor;
+    }
+    .imgBox{
+        position: relative;
+        &:hover{
+            .inner_box{
+                visibility: visible;
+                height: 100%;
+                opacity: 1;
+            }
+        }
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .inner_box{
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        width: 100%;
+        height: 0%;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+        background: linear-gradient(0deg, rgba(69,248,130,0.7147233893557423) 0%, rgba(0,0,0,0) 100%);
+        transition: all 500ms ease;
+    }
+    .content{
+        position: absolute;
+        bottom: 20PX;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.match_section{
+    .bg_img{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 30px 0px;
+        @include minwidth(992px){
+            padding: 100px 0px;
+        }
+    }
+}
+// .project_section{
+//     background-color: #000;
+//     .container{
+//         @include minwidth(1600px){
+//             max-width: 1590px;
+//         }
+//     }
+//     .mykd_project{
+//         margin:  -180px 0 160px;
+//     }
+//     .img_box{
+//         width: 400px;
+//     }
+// }
+
+.social_section{
+    margin-top: -35px;
+    .bgImg{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .social_content{
+        padding: 80px 0px 30px;
+        @include minwidth(992px){
+            padding: 100px 0px;
+        }
+    }
+    .social_row{
+        padding-top: 30px;
+        @include minwidth(992px){
+            padding-top: 80px;
+        }
+    }
+    .social_holder{
+        max-width: 250px;
+        height: 150px;
+        border: 3px solid $primaryColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 65px;
+            height: 5px;
+            bottom: -8px;
+            left: -3px;
+            border-radius: 0px 0px 10px  10px;
+            background-color: $primaryColor;
+        }
+        &:hover{
+            i{
+                color: $primaryColor;
+            }
+        }
+        p{
+            letter-spacing: 3px;
+        }
+    }
+    .icon_box{
+        color: $secondaryColor;
+        font-size: 35px;
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: 600;
     }
 }

@@ -87,7 +87,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 800;
 }
 @media screen and (min-width: 768px) {
@@ -110,7 +110,7 @@ h4,
 @media screen and (min-width: 992px) {
   h4,
   .h4 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -337,9 +337,9 @@ th {
   border-radius: 20px 0px 20px 0px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1400px) {
   .container {
-    max-width: 1580px;
+    max-width: 1300px;
   }
 }
 
@@ -351,6 +351,11 @@ header {
   padding: 20px 0px;
   background-color: #182029;
   z-index: 9999;
+}
+@media screen and (min-width: 1600px) {
+  header .container {
+    max-width: 1580px;
+  }
 }
 header .header_content {
   display: flex;
@@ -635,4 +640,283 @@ header .signup_box {
 }
 .match_resultSec .match_time h6 {
   letter-spacing: 2px;
+}
+
+.areaBackgroung {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px 60px;
+}
+@media screen and (min-width: 768px) {
+  .areaBackgroung {
+    padding: 50px 0px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .areaBackgroung {
+    padding: 80px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .areaBackgroung {
+    padding: 190px 0px;
+  }
+}
+
+.nft_journey .tittle::before {
+  left: 25px;
+}
+.nft_journey p {
+  color: #adb0bc;
+}
+.nft_journey .nft_text {
+  margin-top: 30px;
+}
+@media screen and (min-width: 992px) {
+  .nft_journey .nft_text {
+    margin-top: 60px;
+  }
+}
+.nft_journey .nft_count h6 {
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .nft_journey .nft_count h6 {
+    font-size: 30px;
+  }
+}
+.nft_journey .nft_count P {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+.nft_journey .tutorial_box .icon_box {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.nft_journey .tutorial_box .icon_box:hover {
+  background-color: #45f882;
+  border: 2px solid #45f882;
+}
+.nft_journey .tutorial_box .icon_box:hover i {
+  color: #000;
+}
+.nft_journey .tutorial_box i {
+  color: #45f882;
+}
+.nft_journey .tutorial_box a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 991px) {
+  .nft_journey .funfact_col {
+    width: 511px;
+    margin: auto;
+  }
+}
+.nft_journey .funfactBg {
+  background-repeat: no-repeat;
+  max-width: 511px;
+}
+@media screen and (min-width: 1200px) {
+  .nft_journey .funfactBg {
+    margin-left: 115px;
+  }
+}
+.nft_journey .funfact_img {
+  width: 180px;
+  transform: translateX(60px) translateY(0px);
+}
+@media screen and (min-width: 576px) {
+  .nft_journey .funfact_img {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nft_journey .funfact_img {
+    width: 350px;
+    transform: translateX(60px) translateY(-68px);
+  }
+}
+.nft_journey .trophy_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transform: translateX(-26px) translateY(15px);
+}
+@media screen and (min-width: 992px) {
+  .nft_journey .trophy_box {
+    transform: translateY(-40px);
+  }
+}
+.nft_journey .trophy_box h6 {
+  font-size: 16px;
+}
+@media screen and (min-width: 992px) {
+  .nft_journey .trophy_box h6 {
+    font-size: 20px;
+  }
+}
+.nft_journey .trophy_box p {
+  margin-bottom: 0px;
+  font-size: 14px;
+  text-align: end;
+}
+.nft_journey .trophy {
+  width: 40px;
+  position: relative;
+}
+.nft_journey .trophy::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/trophy_color.png");
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.stramesr_section {
+  padding-top: 80px;
+}
+@media screen and (min-width: 1200px) {
+  .stramesr_section {
+    padding-top: 130px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .stramesr_section {
+    padding-top: 310px;
+  }
+}
+.stramesr_section .streamers_slid {
+  overflow-y: unset;
+  padding-top: 50px;
+}
+@media screen and (max-width: 575px) {
+  .stramesr_section .streamers_slid {
+    width: 200px;
+  }
+}
+.stramesr_section .swiper-pagination {
+  bottom: -35px;
+  color: #fff;
+}
+.stramesr_section .swiper-pagination-bullet-active {
+  background-color: #45f882;
+}
+.stramesr_section .imgBox {
+  position: relative;
+}
+.stramesr_section .imgBox:hover .inner_box {
+  visibility: visible;
+  height: 100%;
+  opacity: 1;
+}
+.stramesr_section .imgBox img {
+  width: 100%;
+  border-radius: 10px;
+}
+.stramesr_section .inner_box {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(69, 248, 130, 0.7147233894) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 500ms ease;
+}
+.stramesr_section .content {
+  position: absolute;
+  bottom: 20PX;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.match_section .bg_img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 0px;
+}
+@media screen and (min-width: 992px) {
+  .match_section .bg_img {
+    padding: 100px 0px;
+  }
+}
+
+.social_section {
+  margin-top: -35px;
+}
+.social_section .bgImg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.social_section .social_content {
+  padding: 80px 0px 30px;
+}
+@media screen and (min-width: 992px) {
+  .social_section .social_content {
+    padding: 100px 0px;
+  }
+}
+.social_section .social_row {
+  padding-top: 30px;
+}
+@media screen and (min-width: 992px) {
+  .social_section .social_row {
+    padding-top: 80px;
+  }
+}
+.social_section .social_holder {
+  max-width: 250px;
+  height: 150px;
+  border: 3px solid #45f882;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+}
+.social_section .social_holder::after {
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 5px;
+  bottom: -8px;
+  left: -3px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #45f882;
+}
+.social_section .social_holder:hover i {
+  color: #45f882;
+}
+.social_section .social_holder p {
+  letter-spacing: 3px;
+}
+.social_section .icon_box {
+  color: #fff;
+  font-size: 35px;
+}
+.social_section a {
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
