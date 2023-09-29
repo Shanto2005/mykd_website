@@ -84,3 +84,31 @@ var swiper = new Swiper('.streamers_slid', {
 //       },
 //     },
 //   });
+
+var swiper = new Swiper('.sponsor_slide', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: 'true',
+    keyboard: {
+      enabled: true,
+    },
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1400: {
+        slidesPerView: 5,
+      },
+    },
+  });
