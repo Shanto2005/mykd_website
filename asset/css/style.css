@@ -376,7 +376,7 @@ header .header_menu a {
 }
 header .inputBox .btn:active {
   color: unset;
-  border-color: unset;
+  border: unset;
 }
 header .search_wrepper {
   display: flex;
@@ -583,7 +583,7 @@ header .signup_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 1;
 }
 @media screen and (min-width: 992px) {
   .match_resultSec .team_logo {
@@ -858,6 +858,167 @@ header .signup_box {
   .match_section .bg_img {
     padding: 100px 0px;
   }
+}
+.match_section .upcomin_match_list {
+  margin-top: 80px;
+}
+.match_section .upcomingmatch_position {
+  background-color: #0f1c23;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 25px;
+}
+@media screen and (min-width: 992px) {
+  .match_section .upcomingmatch_position {
+    padding: 20px 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .match_section .upcomingmatch_position {
+    -webkit-clip-path: polygon(10% 0, 90% 0, 95% 51%, 90% 100%, 10% 100%, 5% 51%);
+            clip-path: polygon(10% 0, 90% 0, 95% 51%, 90% 100%, 10% 100%, 5% 51%);
+    padding: 30px 150px;
+  }
+}
+.match_section .upcomingmatch_position::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #45f882;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+.match_section .upcomingmatch_position::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #45f882;
+  bottom: 0;
+  right: 0;
+  transition: 1s;
+}
+.match_section .upcomingmatch_position:hover::after {
+  width: 100%;
+}
+.match_section .upcomingmatch_position:hover::before {
+  width: 100%;
+}
+.match_section .imgBox {
+  border: 4px solid #34353d;
+  border-radius: 10px;
+  transition: 0.4s;
+  width: 58px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.match_section .imgBox:hover {
+  border: 4px solid #45f882;
+}
+@media screen and (min-width: 576px) {
+  .match_section .imgBox {
+    width: 100px;
+    height: 100px;
+  }
+}
+.match_section .imgBox img {
+  width: 70%;
+}
+.match_section .imgBox a {
+  text-align: center;
+}
+.match_section .upcomingmatch_content {
+  display: flex;
+  align-items: center;
+}
+.match_section .upcoming_match_info {
+  display: none;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .match_section .upcoming_match_info {
+    display: block;
+  }
+}
+.match_section .upcoming_match_info p {
+  color: #45f882;
+  margin-bottom: 0px;
+}
+.match_section .upcoming_match_info a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  transition: 0.4s;
+}
+.match_section .upcoming_match_info a:hover {
+  color: #45f882;
+}
+@media screen and (min-width: 992px) {
+  .match_section .upcoming_match_info a {
+    font-size: 25px;
+  }
+}
+.match_section .upcoming_match_time {
+  width: 90px;
+  height: 90px;
+  border: 4px solid #34353d;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+}
+@media screen and (min-width: 992px) {
+  .match_section .upcoming_match_time {
+    width: 130px;
+    height: 110px;
+  }
+}
+.match_section .upcoming_match_time h4 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 992px) {
+  .match_section .upcoming_match_time h4 {
+    font-size: 30px;
+  }
+}
+.match_section .uncoming_match_date {
+  -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 6% 100%);
+          clip-path: polygon(0 0, 100% 0, 95% 100%, 6% 100%);
+  background-color: #0f1c23;
+  transition: 0.4s;
+  width: 240px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  margin-top: 5px;
+}
+.match_section .uncoming_match_date:hover {
+  background-color: #45f882;
+}
+.match_section .uncoming_match_date:hover p {
+  color: #000;
+  opacity: 1;
+  font-weight: 600;
+}
+.match_section .uncoming_match_date p {
+  color: #fff;
+  opacity: 0.5;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.match_section .scndmatch {
+  margin: 70px 0px;
 }
 
 .social_section {
