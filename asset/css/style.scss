@@ -905,20 +905,21 @@ header{
         margin: 70px 0px;
     }
 }
-// .project_section{
-//     background-color: #000;
-//     .container{
-//         @include minwidth(1600px){
-//             max-width: 1590px;
-//         }
-//     }
-//     .mykd_project{
-//         margin:  -180px 0 160px;
-//     }
-//     .img_box{
-//         width: 400px;
-//     }
-// }
+.project_section{
+    background-color: #000;
+    padding: 50px 0px;
+    @include minwidth(992px){
+        padding: 100px 0px;
+    }
+    .container{
+        @include minwidth(1600px){
+            max-width: 1590px;
+        }
+    }
+    .img_box{
+        text-align: center;
+    }
+}
 
 .social_section{
     margin-top: -35px;
@@ -1125,6 +1126,48 @@ header{
             opacity: 0;
             transition: 0.5s;
         }
+        }
+    }
+}
+.footer_btm{
+    padding: 20PX 0PX;
+    background-color: #000;
+    .copyright_box{
+        p{
+            font-size: 12px;
+            color: #9f9f9f;
+            margin-bottom: 0;
+        }
+        span{
+            color: $primaryColor;
+        }
+    }
+    .link_box{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-left: 0;
+            margin-bottom: 0;
+            @include minwidth(992px){
+                justify-content: flex-end;
+            }
+        }
+        li{
+            color: #9f9f9f;
+            list-style: none;
+            transition: 0.4s;
+            &:not(:first-child){
+                padding-left: 20px;
+            }
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
         }
     }
 }
