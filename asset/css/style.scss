@@ -1371,15 +1371,99 @@ header{
         margin-top: 20px;
     }
 }
+.about_card_sec{
+    .bgImg{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .card_content{
+        padding: 30px 0px;
+        @include minwidth(768px){
+            padding: 50px 0px;
+        }
+        @include minwidth(1400px){
+            padding: 100px 0px;        
+        }
+    }
+    .card_heading{
+        padding-bottom: 40px;
+        @include minwidth(1400px){
+            padding-bottom: 60px;
+        }
+    }
+    .card_holder{
+        background-color: #1c242f;
+        border: 1px solid #27313f;
+        box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.17);
+        text-align: center;
+        padding: 25px 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.4s;
+        &:hover{
+            transform: translateY(-10px);
+            .img_box::after, ::before{
+                opacity: 1;
+            }
+        }
+    }
+    .img_box{
+        position: relative;
+        z-index: 0;
+        img{
+            border: 2px solid $secondaryColor;
+            border-radius: 50%;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 200px;
+            height: 70px;
+            background-color: $primaryColor;
+            left: -55px;
+            top: 50px;
+            transform:rotate(30deg);
+            opacity: 0.5;
+            transition: 0.4s;
+            z-index: -1;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            width: 200px;
+            height: 70px;
+            right: -55px;
+            top: 50px;
+            background-color: $primaryColor;
+            transform:rotate(-30deg);
+            opacity: 0.5;
+            transition: 0.4s;
+            z-index: -1;
+        }
+    }
+    .author_box{
+        color: $primaryColor;
+        h4{
+            font-weight: 700;
+            color: $secondaryColor;
+        }
+        p{
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+    }
+}
+
 // aboutPageEnd 
 
-#cursor{
-    height: 50px;
-    width: 50px;
-    background-color: $primaryColor;
-    border-radius: 50%;
-    position: fixed;
-    z-index: 2;
-    // transition-duration: 0.5s;
-    // transition-timing-function: ease-in-out;
-}
+// #cursor{
+//     height: 50px;
+//     width: 50px;
+//     background-color: $primaryColor;
+//     border-radius: 50%;
+//     position: fixed;
+//     z-index: 2;
+//     // transition-duration: 0.5s;
+//     // transition-timing-function: ease-in-out;
+// }

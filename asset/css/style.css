@@ -1511,11 +1511,90 @@ header .signup_box {
   margin-top: 20px;
 }
 
-#cursor {
-  height: 50px;
-  width: 50px;
-  background-color: #45f882;
+.about_card_sec .bgImg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about_card_sec .card_content {
+  padding: 30px 0px;
+}
+@media screen and (min-width: 768px) {
+  .about_card_sec .card_content {
+    padding: 50px 0px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .about_card_sec .card_content {
+    padding: 100px 0px;
+  }
+}
+.about_card_sec .card_heading {
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1400px) {
+  .about_card_sec .card_heading {
+    padding-bottom: 60px;
+  }
+}
+.about_card_sec .card_holder {
+  background-color: #1c242f;
+  border: 1px solid #27313f;
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  padding: 25px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.about_card_sec .card_holder:hover {
+  transform: translateY(-10px);
+}
+.about_card_sec .card_holder:hover .img_box::after, .about_card_sec .card_holder:hover ::before {
+  opacity: 1;
+}
+.about_card_sec .img_box {
+  position: relative;
+  z-index: 0;
+}
+.about_card_sec .img_box img {
+  border: 2px solid #fff;
   border-radius: 50%;
-  position: fixed;
-  z-index: 2;
+}
+.about_card_sec .img_box::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 70px;
+  background-color: #45f882;
+  left: -55px;
+  top: 50px;
+  transform: rotate(30deg);
+  opacity: 0.5;
+  transition: 0.4s;
+  z-index: -1;
+}
+.about_card_sec .img_box::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 70px;
+  right: -55px;
+  top: 50px;
+  background-color: #45f882;
+  transform: rotate(-30deg);
+  opacity: 0.5;
+  transition: 0.4s;
+  z-index: -1;
+}
+.about_card_sec .author_box {
+  color: #45f882;
+}
+.about_card_sec .author_box h4 {
+  font-weight: 700;
+  color: #fff;
+}
+.about_card_sec .author_box p {
+  letter-spacing: 1px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
