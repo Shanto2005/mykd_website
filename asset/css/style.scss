@@ -14,19 +14,13 @@
     font-family: 'Barlow';
     src: url('../web-fonts/Barlow-SemiBold.woff2') format('woff2'),
         url('../web-fonts/Barlow-SemiBold.woff') format('woff');
-    font-weight: 400;
+    font-weight: 600;
 }
 @font-face {
     font-family: 'Barlow';
     src: url('../web-fonts/Barlow-Medium.woff2') format('woff2'),
         url('../web-fonts/Barlow-Medium.woff') format('woff');
     font-weight: 500;
-}
-@font-face {
-    font-family: 'Barlow';
-    src: url('../web-fonts/Barlow-SemiBold.woff2') format('woff2'),
-        url('../web-fonts/Barlow-SemiBold.woff') format('woff');
-    font-weight: 600;
 }
 @font-face {
     font-family: 'Barlow';
@@ -41,7 +35,6 @@
         url('../web-fonts/Barlow-ExtraBold.woff') format('woff');
     font-weight: 800;
 }
-@import url(popins.css);
 @mixin minwidth($width) {
     @media screen and (min-width: $width) {
         @content;
@@ -62,7 +55,7 @@ $allHeading: 'h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6';
     font-weight: 600;
 }
 body{
-    font-family: $primaryFont;
+    font-family: "Barlow";
     font-size: 14px;
     color: $secondaryColor;
     @include minwidth(768px){
@@ -84,13 +77,13 @@ h1,
 
 h2,
 .h2 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     @include minwidth(768px) {
-        font-size: 32px;
+        font-size: 55px;
     }
     @include minwidth(1400px) {
-        font-size: 45px;
+        font-size: 80px;
     }
 }
 
@@ -274,6 +267,32 @@ th {
         border-radius: 20px 0px 20px 0px;
     }
 }
+
+@keyframes shake {
+	10%,90% {
+		transform: translate3d(-2px, 0, 0);
+	}
+	20%,80% {
+		transform: translate3d(2px, 0, 0);
+	}
+	30%,50%,70% {
+		transform: translate3d(-2px, 0, 0);
+	}
+	40%,60% {
+		transform: translate3d(2px, 0, 0);
+	}
+}
+@keyframes maskImg {
+	0% {
+		transform: translateX(10px);
+	}
+	50% {
+		transform: translateX(50px);
+	}
+	100% {
+		transform: translateX(10px);
+	}
+}
 .container {
     @include minwidth(1400px) {
         max-width: 1300px;
@@ -281,12 +300,12 @@ th {
 }
 
 header{
-    position: fixed;
+    position: absolute;
     width: 100%;
     left: 0;
     top: 0;
     padding: 20px 0px;
-    background-color: #182029;
+    // background-color: #182029;
     z-index: 9999;
     .container{
         @include minwidth(1600px){
@@ -1170,4 +1189,197 @@ header{
             text-decoration: none;
         }
     }
+}
+
+
+// aboutPageStart
+.ab_banner_section{
+    .bgImg{
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 49%;
+            height: 20px;
+            left: 0;
+            bottom: 0;
+            background-color: $primaryColor;
+            clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+            z-index: 1;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            width: 49%;
+            height: 20px;
+            right: 0;
+            bottom: 0;
+            background-color: $primaryColor;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0% 100%);
+            z-index: 1;
+        }
+        &::before, &::after{  
+            @include minwidth(768px){
+                height: 30px;
+            }        
+            @include minwidth(992px){
+                height: 40px;
+            }
+            @include minwidth(1400px){
+                height: 60px;
+            }
+        }
+    }
+    .ab_bannerContent{
+        min-height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        @include minwidth(992px){
+            min-height: 700px;            
+            padding: 0px 80px;
+        }
+    }
+    .bread_cumbs{
+        li{
+            color: $primaryColor;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+        }
+        .active{
+            color: $secondaryColor;
+            &::before{
+                color: $primaryColor;
+            }
+        }
+    }
+    .sp_img_box{
+        @include maxwidth(992px){
+            margin: auto;
+            width: 200px;
+        }
+    }
+    .sp_img_box:hover {
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        perspective: 1000px;
+      }
+}
+.nft_gm_section{
+    padding: 30px 0px;
+    background-color: #10181f;
+    position: relative;
+    @include minwidth(992px){
+        padding: 100px 0px;
+    }
+    @include minwidth(1600px){
+        &::before{
+            position: absolute;
+            content: 'ONLINE';
+            color: #fff;
+            opacity: 0.01;
+            font-size: 250px;
+            font-weight: 800;
+            letter-spacing: 70px;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    .nft_tittle{        
+        P{
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 0;
+            @include minwidth(768px){
+                font-size: 35px;
+            }
+            @include minwidth(992px){
+                font-size: 45px;
+            }
+            @include minwidth(1400px){
+                font-size: 60px;
+                letter-spacing: 2px;
+            }
+        }
+        .dev{
+            font-weight: 700;
+            color: $primaryColor;
+        }
+        .gm{
+            display: block;
+            font-weight: 700;
+        }
+    }
+    .nft_innerrow{
+        position: relative;
+        &:hover{
+            &::after{
+                transform: translateX(110%) translateY(97%) rotate(180deg);
+            }
+        }
+        @include minwidth(1400px){            
+            &::after{
+                position: absolute;
+                content: '';
+                width: 72px;
+                height: 72px;
+                right: 63%;
+                bottom: 41%;
+                background-color: $primaryColor;
+                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.32);
+                transition: 0.8s;
+            }
+        }
+    }
+    .nft_Limg{
+        @include minwidth(992px){
+            -webkit-mask-image: url( '../images/mask_bg01.png');
+            width: 363px;
+            margin: auto;
+        }
+    }
+    .nft_Rimg{
+        @include minwidth(1400px){
+            -webkit-mask-image: url('../images/mask_bg02.png');
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100px;
+                height: 50px;
+                background-color: $primaryColor;
+                top: 10px;
+                left: 10px;
+                animation: maskImg infinite 5s; 
+            }
+        }
+    }
+    .nft_Rholder{
+        @include minwidth(1400px){
+            width: 462px;
+            transform: translateX(-40px);
+        }
+    }
+    .nft_text{
+        color: #adb0bc;
+        margin-top: 20px;
+    }
+}
+// aboutPageEnd 
+
+#cursor{
+    height: 50px;
+    width: 50px;
+    background-color: $primaryColor;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2;
+    // transition-duration: 0.5s;
+    // transition-timing-function: ease-in-out;
 }

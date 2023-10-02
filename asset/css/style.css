@@ -1,4 +1,3 @@
-@import url(popins.css);
 @font-face {
   font-family: "Berlin Sans FB Demi";
   src: url("../web-fonts/BerlinSansFBDemi-Bold.woff2") format("woff2"), url("../web-fonts/BerlinSansFBDemi-Bold.woff") format("woff");
@@ -12,17 +11,12 @@
 @font-face {
   font-family: "Barlow";
   src: url("../web-fonts/Barlow-SemiBold.woff2") format("woff2"), url("../web-fonts/Barlow-SemiBold.woff") format("woff");
-  font-weight: 400;
+  font-weight: 600;
 }
 @font-face {
   font-family: "Barlow";
   src: url("../web-fonts/Barlow-Medium.woff2") format("woff2"), url("../web-fonts/Barlow-Medium.woff") format("woff");
   font-weight: 500;
-}
-@font-face {
-  font-family: "Barlow";
-  src: url("../web-fonts/Barlow-SemiBold.woff2") format("woff2"), url("../web-fonts/Barlow-SemiBold.woff") format("woff");
-  font-weight: 600;
 }
 @font-face {
   font-family: "Barlow";
@@ -39,7 +33,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Barlow";
   font-size: 14px;
   color: #fff;
 }
@@ -69,19 +63,19 @@ h1,
 
 h2,
 .h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   h2,
   .h2 {
-    font-size: 32px;
+    font-size: 55px;
   }
 }
 @media screen and (min-width: 1400px) {
   h2,
   .h2 {
-    font-size: 45px;
+    font-size: 80px;
   }
 }
 
@@ -337,6 +331,31 @@ th {
   border-radius: 20px 0px 20px 0px;
 }
 
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
+@keyframes maskImg {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
 @media screen and (min-width: 1400px) {
   .container {
     max-width: 1300px;
@@ -344,12 +363,11 @@ th {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   top: 0;
   padding: 20px 0px;
-  background-color: #182029;
   z-index: 9999;
 }
 @media screen and (min-width: 1600px) {
@@ -1303,4 +1321,201 @@ header .signup_box {
 .footer_btm .link_box a {
   color: inherit;
   text-decoration: none;
+}
+
+.ab_banner_section .bgImg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.ab_banner_section .bgImg::before {
+  position: absolute;
+  content: "";
+  width: 49%;
+  height: 20px;
+  left: 0;
+  bottom: 0;
+  background-color: #45f882;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+.ab_banner_section .bgImg::after {
+  position: absolute;
+  content: "";
+  width: 49%;
+  height: 20px;
+  right: 0;
+  bottom: 0;
+  background-color: #45f882;
+  -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0% 100%);
+          clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0% 100%);
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .ab_banner_section .bgImg::before, .ab_banner_section .bgImg::after {
+    height: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ab_banner_section .bgImg::before, .ab_banner_section .bgImg::after {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .ab_banner_section .bgImg::before, .ab_banner_section .bgImg::after {
+    height: 60px;
+  }
+}
+.ab_banner_section .ab_bannerContent {
+  min-height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 992px) {
+  .ab_banner_section .ab_bannerContent {
+    min-height: 700px;
+    padding: 0px 80px;
+  }
+}
+.ab_banner_section .bread_cumbs li {
+  color: #45f882;
+}
+.ab_banner_section .bread_cumbs a {
+  color: inherit;
+  text-decoration: none;
+}
+.ab_banner_section .bread_cumbs .active {
+  color: #fff;
+}
+.ab_banner_section .bread_cumbs .active::before {
+  color: #45f882;
+}
+@media screen and (max-width: 992px) {
+  .ab_banner_section .sp_img_box {
+    margin: auto;
+    width: 200px;
+  }
+}
+.ab_banner_section .sp_img_box:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
+}
+
+.nft_gm_section {
+  padding: 30px 0px;
+  background-color: #10181f;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .nft_gm_section {
+    padding: 100px 0px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .nft_gm_section::before {
+    position: absolute;
+    content: "ONLINE";
+    color: #fff;
+    opacity: 0.01;
+    font-size: 250px;
+    font-weight: 800;
+    letter-spacing: 70px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+.nft_gm_section .nft_tittle P {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .nft_gm_section .nft_tittle P {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nft_gm_section .nft_tittle P {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nft_gm_section .nft_tittle P {
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+}
+.nft_gm_section .nft_tittle .dev {
+  font-weight: 700;
+  color: #45f882;
+}
+.nft_gm_section .nft_tittle .gm {
+  display: block;
+  font-weight: 700;
+}
+.nft_gm_section .nft_innerrow {
+  position: relative;
+}
+.nft_gm_section .nft_innerrow:hover::after {
+  transform: translateX(110%) translateY(97%) rotate(180deg);
+}
+@media screen and (min-width: 1400px) {
+  .nft_gm_section .nft_innerrow::after {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 72px;
+    right: 63%;
+    bottom: 41%;
+    background-color: #45f882;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.32);
+    transition: 0.8s;
+  }
+}
+@media screen and (min-width: 992px) {
+  .nft_gm_section .nft_Limg {
+    -webkit-mask-image: url("../images/mask_bg01.png");
+    width: 363px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nft_gm_section .nft_Rimg {
+    -webkit-mask-image: url("../images/mask_bg02.png");
+  }
+  .nft_gm_section .nft_Rimg::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 50px;
+    background-color: #45f882;
+    top: 10px;
+    left: 10px;
+    animation: maskImg infinite 5s;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .nft_gm_section .nft_Rholder {
+    width: 462px;
+    transform: translateX(-40px);
+  }
+}
+.nft_gm_section .nft_text {
+  color: #adb0bc;
+  margin-top: 20px;
+}
+
+#cursor {
+  height: 50px;
+  width: 50px;
+  background-color: #45f882;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 2;
 }/*# sourceMappingURL=style.css.map */
