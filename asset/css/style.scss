@@ -110,6 +110,9 @@ h4,
 h5,
 .h5 {
     font-size: 16px;
+    @include minwidth(768px){
+        font-size: 20px;
+    }
 }
 
 h6,
@@ -606,6 +609,9 @@ header{
         margin-top: 30px;
         @include minwidth(992px){
             margin-top: 60px;
+        }
+        p{
+            margin-bottom: 0px;
         }
     }
     .nft_count{
@@ -1371,6 +1377,87 @@ header{
         margin-top: 20px;
     }
 }
+.ab_services{
+    background-color: #040608;
+    padding: 30px 0px 40px;
+    @include minwidth(768px){
+        padding: 50px 0px;
+    }
+    @include minwidth(1400px){
+        padding: 100px 0px 120px;
+    }
+    .tittle{
+        margin-bottom: 50px;
+        @include minwidth(992px){
+            &::before{
+                left: 25px;
+            }
+        }
+    }
+    .icon_box{
+        color: $primaryColor;
+        font-size: 40px;
+        text-align: start;
+    }
+    .author_name{
+        a{
+            color: $secondaryColor;
+            transition: 0.4s;
+            text-decoration: none;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+    }
+    .text_box{
+        p{
+            color: #adb0bc;
+            font-size: 15px;
+            @include minwidth(1200px){
+                font-size: 16px;
+            }
+        }
+    }
+    .img_holder{
+        position: relative;
+        a{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            bottom: -20px;
+            right: 0;
+            font-size: 30px;
+            color: #000;
+            background-color: #faa706;
+            border-radius: 50%;
+            transform: rotate(45deg);
+            transition: 0.4s;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+            &:hover{
+                transform: unset;
+            }
+            @include minwidth(768px){
+                right: 40px;
+            }
+            @include minwidth(992px){
+                width: 100px;
+                height: 100px;
+                font-size: 70px;
+                bottom: -40px;
+                right: -40px;
+            }
+            @include minwidth(1600px){
+                width: 150px;
+                height: 150px;
+                font-size: 100px;
+            }
+        }
+    }
+}
 .about_card_sec{
     .bgImg{
         background-size: cover;
@@ -1454,8 +1541,122 @@ header{
         }
     }
 }
-
 // aboutPageEnd 
+
+// .tournamentpage_satrt
+.tournament_card{
+    background-color: #10181f;
+    padding: 30px 0px;
+    @include minwidth(768px){
+        padding: 50px 0px;
+    }
+    @include minwidth(1400px){
+        padding: 100px 0px;
+    }
+    .card{
+        background-color: #17222c;
+        border-radius: 10px;
+        padding: 20px;
+        height: 100%;
+    }
+    .countdown{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+            color: $secondaryColor;
+            opacity: 0.5;
+            &:not(:first-child){
+                padding-left: 20px;
+            }
+        }
+        span{
+            display: block;
+            text-align: center;
+            opacity: 1;
+        }
+    }
+    .tour_caption{
+        color: $secondaryColor;
+        h6{
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        h4{
+            color: $primaryColor;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+    .tour_price{
+        width: fit-content;
+        color: $secondaryColor;
+        text-align: center;
+        background-color: #10181f;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        border-radius: 10px;
+        padding: 30px 80px;
+        margin-top: 20px;
+        p{
+            opacity: 0.5;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        i{
+            color: gold;
+            opacity: 1;
+            margin-right: 15px;
+        }
+    }
+    .tour_price_box{
+        margin-top: 20px;
+        ul{
+            padding-left: 0;
+        }
+        li{
+            list-style: none;
+            color: $secondaryColor;
+            display: flex;
+            align-items: center;
+            padding: 10px 0px;
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .player_img{
+            margin-right: 15px;
+            img{
+                border-radius: 5px;
+            }
+        }
+        .player_name{
+            opacity: 0.5;
+            transition: 0.4s;
+            &:hover{
+                opacity: 1;
+            }
+            p{
+                letter-spacing: 1px;
+            }
+        }
+        .price_box{
+            color: $primaryColor;
+            margin-left: auto;
+            i{
+                color: gold;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+// .tournamentpage_End
 
 // #cursor{
 //     height: 50px;

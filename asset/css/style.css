@@ -112,6 +112,12 @@ h5,
 .h5 {
   font-size: 16px;
 }
+@media screen and (min-width: 768px) {
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+}
 
 h6,
 .h6 {
@@ -694,6 +700,9 @@ header .signup_box {
   .nft_journey .nft_text {
     margin-top: 60px;
   }
+}
+.nft_journey .nft_text p {
+  margin-bottom: 0px;
 }
 .nft_journey .nft_count h6 {
   font-size: 20px;
@@ -1511,6 +1520,96 @@ header .signup_box {
   margin-top: 20px;
 }
 
+.ab_services {
+  background-color: #040608;
+  padding: 30px 0px 40px;
+}
+@media screen and (min-width: 768px) {
+  .ab_services {
+    padding: 50px 0px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .ab_services {
+    padding: 100px 0px 120px;
+  }
+}
+.ab_services .tittle {
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 992px) {
+  .ab_services .tittle::before {
+    left: 25px;
+  }
+}
+.ab_services .icon_box {
+  color: #45f882;
+  font-size: 40px;
+  text-align: start;
+}
+.ab_services .author_name a {
+  color: #fff;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.ab_services .author_name a:hover {
+  color: #45f882;
+}
+.ab_services .text_box p {
+  color: #adb0bc;
+  font-size: 15px;
+}
+@media screen and (min-width: 1200px) {
+  .ab_services .text_box p {
+    font-size: 16px;
+  }
+}
+.ab_services .img_holder {
+  position: relative;
+}
+.ab_services .img_holder a {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: -20px;
+  right: 0;
+  font-size: 30px;
+  color: #000;
+  background-color: #faa706;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  transition: 0.4s;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.ab_services .img_holder a:hover {
+  transform: unset;
+}
+@media screen and (min-width: 768px) {
+  .ab_services .img_holder a {
+    right: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .ab_services .img_holder a {
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+    bottom: -40px;
+    right: -40px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .ab_services .img_holder a {
+    width: 150px;
+    height: 150px;
+    font-size: 100px;
+  }
+}
+
 .about_card_sec .bgImg {
   background-size: cover;
   background-position: center;
@@ -1597,4 +1696,120 @@ header .signup_box {
 .about_card_sec .author_box p {
   letter-spacing: 1px;
   font-weight: 500;
+}
+
+.tournament_card {
+  background-color: #10181f;
+  padding: 30px 0px;
+}
+@media screen and (min-width: 768px) {
+  .tournament_card {
+    padding: 50px 0px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .tournament_card {
+    padding: 100px 0px;
+  }
+}
+.tournament_card .card {
+  background-color: #17222c;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+}
+.tournament_card .countdown ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tournament_card .countdown li {
+  list-style: none;
+  color: #fff;
+  opacity: 0.5;
+}
+.tournament_card .countdown li:not(:first-child) {
+  padding-left: 20px;
+}
+.tournament_card .countdown span {
+  display: block;
+  text-align: center;
+  opacity: 1;
+}
+.tournament_card .tour_caption {
+  color: #fff;
+}
+.tournament_card .tour_caption h6 {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.tournament_card .tour_caption h4 {
+  color: #45f882;
+  font-size: 30px;
+  font-weight: 700;
+}
+.tournament_card .tour_price {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  text-align: center;
+  background-color: #10181f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+  padding: 30px 80px;
+  margin-top: 20px;
+}
+.tournament_card .tour_price p {
+  opacity: 0.5;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.tournament_card .tour_price i {
+  color: gold;
+  opacity: 1;
+  margin-right: 15px;
+}
+.tournament_card .tour_price_box {
+  margin-top: 20px;
+}
+.tournament_card .tour_price_box ul {
+  padding-left: 0;
+}
+.tournament_card .tour_price_box li {
+  list-style: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.tournament_card .tour_price_box li p {
+  margin-bottom: 0;
+}
+.tournament_card .tour_price_box .player_img {
+  margin-right: 15px;
+}
+.tournament_card .tour_price_box .player_img img {
+  border-radius: 5px;
+}
+.tournament_card .tour_price_box .player_name {
+  opacity: 0.5;
+  transition: 0.4s;
+}
+.tournament_card .tour_price_box .player_name:hover {
+  opacity: 1;
+}
+.tournament_card .tour_price_box .player_name p {
+  letter-spacing: 1px;
+}
+.tournament_card .tour_price_box .price_box {
+  color: #45f882;
+  margin-left: auto;
+}
+.tournament_card .tour_price_box .price_box i {
+  color: gold;
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
