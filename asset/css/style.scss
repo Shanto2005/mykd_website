@@ -1386,6 +1386,12 @@ header{
     @include minwidth(1400px){
         padding: 100px 0px 120px;
     }
+    .ab_services_row{
+        @include maxwidth(991px){
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+    }
     .tittle{
         margin-bottom: 50px;
         @include minwidth(992px){
@@ -1444,16 +1450,17 @@ header{
                 right: 40px;
             }
             @include minwidth(992px){
-                width: 100px;
-                height: 100px;
+                width: 80px;
+                height: 80px;
                 font-size: 70px;
-                bottom: -40px;
-                right: -40px;
+                bottom:-40px;
+                right: -11px;
             }
             @include minwidth(1600px){
                 width: 150px;
                 height: 150px;
                 font-size: 100px;
+                right: -40px;
             }
         }
     }
@@ -1479,7 +1486,21 @@ header{
             padding-bottom: 60px;
         }
     }
+    .ab_cardrow{
+        @include maxwidth(991px){
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            overflow-y: unset;
+        }
+    }
+    .ab_cardcol{
+        @include maxwidth(991px){
+            max-width: 350px;
+            margin: auto;
+        }
+    }
     .card_holder{
+        width: 100%;
         background-color: #1c242f;
         border: 1px solid #27313f;
         box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.17);
@@ -1553,11 +1574,51 @@ header{
     @include minwidth(1400px){
         padding: 100px 0px;
     }
+    .tourCard_row{
+        @include maxwidth(991px){
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }        
+    }
+    .tourCard_col{
+        @include maxwidth(991px){
+            max-width: 340px;
+            margin: auto;
+        }
+    }
     .card{
+        position: relative;
         background-color: #17222c;
         border-radius: 10px;
         padding: 20px;
         height: 100%;
+        transition: 0.4s;
+        &:hover{
+            transform: translateY(-10px);
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 90px;
+            height: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 16%;
+            background: radial-gradient(circle, rgba(69,248,130,1) 0%, rgba(0,0,0,0.7707457983193278) 100%);
+            filter: blur(40px);
+            z-index: 0;
+        }
+    }
+    .mdl_card{
+        .mdl_h4{
+            color: #ffbe18;
+        }
+        .mdl_box{
+            color: #ffbe18!important;
+        }
+        &::before{
+            background: radial-gradient(circle, rgba(255,190,24,1) 0%, rgba(0,0,0,0.7707457983193278) 100%);
+        }
     }
     .countdown{
         ul{
@@ -1582,13 +1643,13 @@ header{
     }
     .tour_caption{
         color: $secondaryColor;
+        z-index: 1;
         h6{
             font-weight: 700;
-            margin-bottom: 0;
+            margin-bottom: 5px;
         }
         h4{
             color: $primaryColor;
-            font-size: 30px;
             font-weight: 700;
         }
     }
@@ -1602,15 +1663,16 @@ header{
         align-items: center;
         margin: auto;
         border-radius: 10px;
-        padding: 30px 80px;
+        padding: 20px 30px;
         margin-top: 20px;
+        z-index: 1;
         p{
             opacity: 0.5;
             font-weight: 500;
             margin-bottom: 0;
         }
         i{
-            color: gold;
+            color: #ffbe18;
             opacity: 1;
             margin-right: 15px;
         }
@@ -1619,6 +1681,7 @@ header{
         margin-top: 20px;
         ul{
             padding-left: 0;
+            margin-bottom: 0;
         }
         li{
             list-style: none;
@@ -1650,10 +1713,34 @@ header{
             color: $primaryColor;
             margin-left: auto;
             i{
-                color: gold;
+                color: #ffbe18;
                 margin-left: 10px;
             }
         }
+    }
+    .top_pricePath{
+        position: absolute;
+        clip-path: polygon(0 1%, 100% 0%, 75% 100%, 0% 100%);
+        background-color: $primaryColor;
+        width: 35%;
+        height: 50px;
+        top: 0;
+        left: 0;
+        border-radius: 10px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-weight: 800;
+            margin-bottom: 0;
+            margin-left: -10px;
+        }
+        i{
+            margin-right: 5px;
+        }
+    }
+    .mdil_path{
+        background-color: #ffbe18;
     }
 }
 // .tournamentpage_End

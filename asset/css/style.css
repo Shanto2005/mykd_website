@@ -1534,6 +1534,12 @@ header .signup_box {
     padding: 100px 0px 120px;
   }
 }
+@media screen and (max-width: 991px) {
+  .ab_services .ab_services_row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
 .ab_services .tittle {
   margin-bottom: 50px;
 }
@@ -1595,11 +1601,11 @@ header .signup_box {
 }
 @media screen and (min-width: 992px) {
   .ab_services .img_holder a {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     font-size: 70px;
     bottom: -40px;
-    right: -40px;
+    right: -11px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1607,6 +1613,7 @@ header .signup_box {
     width: 150px;
     height: 150px;
     font-size: 100px;
+    right: -40px;
   }
 }
 
@@ -1636,7 +1643,21 @@ header .signup_box {
     padding-bottom: 60px;
   }
 }
+@media screen and (max-width: 991px) {
+  .about_card_sec .ab_cardrow {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: unset;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about_card_sec .ab_cardcol {
+    max-width: 350px;
+    margin: auto;
+  }
+}
 .about_card_sec .card_holder {
+  width: 100%;
   background-color: #1c242f;
   border: 1px solid #27313f;
   box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.17);
@@ -1712,11 +1733,49 @@ header .signup_box {
     padding: 100px 0px;
   }
 }
+@media screen and (max-width: 991px) {
+  .tournament_card .tourCard_row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .tournament_card .tourCard_col {
+    max-width: 340px;
+    margin: auto;
+  }
+}
 .tournament_card .card {
+  position: relative;
   background-color: #17222c;
   border-radius: 10px;
   padding: 20px;
   height: 100%;
+  transition: 0.4s;
+}
+.tournament_card .card:hover {
+  transform: translateY(-10px);
+}
+.tournament_card .card::before {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 16%;
+  background: radial-gradient(circle, rgb(69, 248, 130) 0%, rgba(0, 0, 0, 0.7707457983) 100%);
+  filter: blur(40px);
+  z-index: 0;
+}
+.tournament_card .mdl_card .mdl_h4 {
+  color: #ffbe18;
+}
+.tournament_card .mdl_card .mdl_box {
+  color: #ffbe18 !important;
+}
+.tournament_card .mdl_card::before {
+  background: radial-gradient(circle, rgb(255, 190, 24) 0%, rgba(0, 0, 0, 0.7707457983) 100%);
 }
 .tournament_card .countdown ul {
   display: flex;
@@ -1739,14 +1798,14 @@ header .signup_box {
 }
 .tournament_card .tour_caption {
   color: #fff;
+  z-index: 1;
 }
 .tournament_card .tour_caption h6 {
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 .tournament_card .tour_caption h4 {
   color: #45f882;
-  font-size: 30px;
   font-weight: 700;
 }
 .tournament_card .tour_price {
@@ -1760,8 +1819,9 @@ header .signup_box {
   align-items: center;
   margin: auto;
   border-radius: 10px;
-  padding: 30px 80px;
+  padding: 20px 30px;
   margin-top: 20px;
+  z-index: 1;
 }
 .tournament_card .tour_price p {
   opacity: 0.5;
@@ -1769,7 +1829,7 @@ header .signup_box {
   margin-bottom: 0;
 }
 .tournament_card .tour_price i {
-  color: gold;
+  color: #ffbe18;
   opacity: 1;
   margin-right: 15px;
 }
@@ -1778,6 +1838,7 @@ header .signup_box {
 }
 .tournament_card .tour_price_box ul {
   padding-left: 0;
+  margin-bottom: 0;
 }
 .tournament_card .tour_price_box li {
   list-style: none;
@@ -1810,6 +1871,31 @@ header .signup_box {
   margin-left: auto;
 }
 .tournament_card .tour_price_box .price_box i {
-  color: gold;
+  color: #ffbe18;
   margin-left: 10px;
+}
+.tournament_card .top_pricePath {
+  position: absolute;
+  -webkit-clip-path: polygon(0 1%, 100% 0%, 75% 100%, 0% 100%);
+          clip-path: polygon(0 1%, 100% 0%, 75% 100%, 0% 100%);
+  background-color: #45f882;
+  width: 35%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  border-radius: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tournament_card .top_pricePath p {
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-left: -10px;
+}
+.tournament_card .top_pricePath i {
+  margin-right: 5px;
+}
+.tournament_card .mdil_path {
+  background-color: #ffbe18;
 }/*# sourceMappingURL=style.css.map */
