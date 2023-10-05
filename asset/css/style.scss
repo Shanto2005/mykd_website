@@ -49,6 +49,7 @@
 $primaryFont: 'Poppins';
 $primaryColor: #45f882;
 $secondaryColor: #fff;
+$thirdcolor: #ffbe18;
 
 $allHeading: 'h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6';
 #{$allHeading} {
@@ -1578,6 +1579,7 @@ header{
         @include maxwidth(991px){
             flex-wrap: nowrap;
             overflow-x: auto;
+            padding: 20px 0px;
         }        
     }
     .tourCard_col{
@@ -1741,6 +1743,156 @@ header{
     }
     .mdil_path{
         background-color: #ffbe18;
+    }
+}
+.active_tournament{
+    .bg_img{
+        padding: 30px 0px;
+    @include minwidth(768px){
+        padding: 50px 0px;
+    }
+    @include minwidth(1400px){
+        padding: 100px 0px;
+    }
+    }
+    .tittle{
+        @include minwidth(992px){
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+        &::before{
+            background-color: transparent;
+        }
+        a{
+            transition: 0.4s;
+            color: $secondaryColor;
+            text-underline-offset: 5px;
+            text-decoration-color: $primaryColor;
+            opacity: 0.7;
+            &:hover{
+                color: $primaryColor;
+                opacity: 1;
+            }
+        }
+    }
+    .tourcard_holder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 30px;
+        margin-top: 25px;
+    }
+    .tour_card{
+        width: 100%;
+        background-color: #19222b;
+        position: relative;
+        padding: 40px 20px;
+        @include minwidth(768px){
+            width: 48%;
+        }
+        @include minwidth(992px){
+            clip-path: polygon(95% 0%, 5% 0%, 0% 30%, 0% 70%, 5% 100%, 95% 100%, 100% 70%, 100% 30%);
+            padding: 40px 75px;
+            width: 100%;
+            &::before{
+                position: absolute;
+                content: '';
+                clip-path: polygon(0 0, 100% 0%, 90% 100%, 9% 100%);
+                background-color: $primaryColor;
+                height: 10px;
+                width: 100px;
+                top: 0;
+                left: 15%;
+                transition: 0.4s;
+            }
+        }
+        &:hover{
+            &::before{
+                background-color: $thirdcolor;
+            }
+            .tour_teamname{
+                color: $thirdcolor;
+            }
+            .tour_price{
+                color: $thirdcolor;
+            }
+            .tour_live{
+                i{
+                    color: $thirdcolor;
+                }
+                a{
+                    opacity: 1;
+                }
+            }
+        }
+        h6{
+            opacity: 0.7;
+            margin-bottom: 5px;
+        }
+        i{
+            font-size: 14px;
+            margin-right: 5px;
+        }
+        p{
+            font-weight: 600;
+        }
+    }
+    .tour_team{
+        img{
+            width: 60px;
+            @include minwidth(992PX){
+                width: 70px;
+            }
+        }
+    }
+    .tour_teamname{
+        color: $primaryColor;
+        transition: 0.4s;
+        @include maxwidth(991px){
+            text-align: end;
+        }
+        h4{
+            color: $secondaryColor;
+        }
+        i{
+            font-size: 10px;
+        }
+    }
+    .tour_price{
+        color: $primaryColor;
+        transition: 0.4s;
+        h6{
+            color: $secondaryColor;
+        }
+    }
+    .tour_time{
+        opacity: 0.7;
+        @include maxwidth(991px){
+            text-align: end;
+        }
+    }
+    .tour_live{
+        color: $secondaryColor;
+        background-color: #0c1217;
+        text-align: center;
+        padding: 10px 25px;
+        border-radius: 5px;
+        @include maxwidth(991px){
+            max-width: 200px;
+            margin: auto;
+        }
+        a{
+            transition: 0.4s;
+            opacity: 0.7;
+            color: inherit;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        i{
+            transition: 0.4s;
+        }
     }
 }
 // .tournamentpage_End
