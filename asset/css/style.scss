@@ -1262,7 +1262,7 @@ header{
         flex-direction: column;
         justify-content: center;
         @include minwidth(992px){
-            min-height: 700px;            
+            min-height: 600px;            
             padding: 0px 80px;
         }
     }
@@ -1927,6 +1927,115 @@ header{
     }
 }
 // .tournamentpage_End
+
+// .contact_section Page_Start
+.contact_section{
+    background-color: #0f161b;
+    padding: 30px 0px;
+    @include minwidth(768px){
+        padding: 50px 0px;
+    }
+    @include minwidth(1400px){
+        padding: 100px 0px;
+    }
+    .text{
+        color: #e2e1e1;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+    .info_text{
+        ul{
+            padding-left: 0;
+        }
+        li{
+            list-style: none;
+            color: #e2e1e1;
+        }
+        a{
+            color: #e2e1e1;
+            text-decoration: none;
+            transition: 0.4s;
+            &:hover{
+                color: $primaryColor;
+            }
+        }
+    }
+    .input_box{
+        height: 50px;
+        position: relative;
+        clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+        &::after{
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 50px;
+            right: 10px;
+            bottom: -15px;
+            border: 1px solid #262f39;
+            transform: rotate(45deg);
+        }
+        input{
+            height: 100%;
+            background-color: unset;
+            border: 1px solid #262f39;
+            border-radius: unset;
+            &:focus{
+                outline: unset;
+            }
+        }
+    }
+    .textarea_box{
+        position: relative;
+        clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+        &::after{
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 50px;
+            right: 10px;
+            bottom: 11px;
+            border: 1px solid #262f39;
+            transform: rotate(45deg);
+        }
+        textarea{
+            border: 1px solid #262f39;
+            background-color: unset;
+            border-radius: unset;
+            outline: unset;
+        }
+    }
+    .submit_box{
+        max-width: 200px;
+        input{
+            transition: 0.4s;
+            background-color: $primaryColor;
+            border: 1px solid #262f39;
+            color: #000;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: unset;
+            position: relative;
+            clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+            &::after{
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 50px;
+                right: 10px;
+                bottom: 11px;
+                border: 1px solid #262f39;
+                transform: rotate(45deg);
+            }
+            &:focus{
+                outline: unset;
+            }
+            &:hover{
+                background-color: $thirdcolor;
+            }
+        }
+    }
+}
+// .contact_section Page_End
 
 // #cursor{
 //     height: 50px;

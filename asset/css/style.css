@@ -1402,7 +1402,7 @@ header .signup_box {
 }
 @media screen and (min-width: 992px) {
   .ab_banner_section .ab_bannerContent {
-    min-height: 700px;
+    min-height: 600px;
     padding: 0px 80px;
   }
 }
@@ -2092,4 +2092,116 @@ header .signup_box {
 }
 .active_tournament .tour_live i {
   transition: 0.4s;
+}
+
+.contact_section {
+  background-color: #0f161b;
+  padding: 30px 0px;
+}
+@media screen and (min-width: 768px) {
+  .contact_section {
+    padding: 50px 0px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .contact_section {
+    padding: 100px 0px;
+  }
+}
+.contact_section .text {
+  color: #e2e1e1;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.contact_section .info_text ul {
+  padding-left: 0;
+}
+.contact_section .info_text li {
+  list-style: none;
+  color: #e2e1e1;
+}
+.contact_section .info_text a {
+  color: #e2e1e1;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.contact_section .info_text a:hover {
+  color: #45f882;
+}
+.contact_section .input_box {
+  height: 50px;
+  position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+}
+.contact_section .input_box::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  right: 10px;
+  bottom: -15px;
+  border: 1px solid #262f39;
+  transform: rotate(45deg);
+}
+.contact_section .input_box input {
+  height: 100%;
+  background-color: unset;
+  border: 1px solid #262f39;
+  border-radius: unset;
+}
+.contact_section .input_box input:focus {
+  outline: unset;
+}
+.contact_section .textarea_box {
+  position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+}
+.contact_section .textarea_box::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  right: 10px;
+  bottom: 11px;
+  border: 1px solid #262f39;
+  transform: rotate(45deg);
+}
+.contact_section .textarea_box textarea {
+  border: 1px solid #262f39;
+  background-color: unset;
+  border-radius: unset;
+  outline: unset;
+}
+.contact_section .submit_box {
+  max-width: 200px;
+}
+.contact_section .submit_box input {
+  transition: 0.4s;
+  background-color: #45f882;
+  border: 1px solid #262f39;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: unset;
+  position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+}
+.contact_section .submit_box input::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  right: 10px;
+  bottom: 11px;
+  border: 1px solid #262f39;
+  transform: rotate(45deg);
+}
+.contact_section .submit_box input:focus {
+  outline: unset;
+}
+.contact_section .submit_box input:hover {
+  background-color: #ffbe18;
 }/*# sourceMappingURL=style.css.map */
