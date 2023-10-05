@@ -28,6 +28,23 @@
   src: url("../web-fonts/Barlow-ExtraBold.woff2") format("woff2"), url("../web-fonts/Barlow-ExtraBold.woff") format("woff");
   font-weight: 800;
 }
+html {
+  scrollbar-color: #634f7b #ddd;
+  scrollbar-width: thin;
+}
+html::-webkit-scrollbar {
+  width: 0.5vw;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #45f882;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+html::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 600;
 }
@@ -1999,6 +2016,21 @@ header .signup_box {
 }
 .active_tournament .tour_card p {
   font-weight: 600;
+}
+.active_tournament .tour_match {
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .active_tournament .tour_match::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 75px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40%;
+  }
 }
 .active_tournament .tour_team img {
   width: 60px;

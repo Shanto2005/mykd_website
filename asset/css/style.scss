@@ -46,6 +46,22 @@
         @content;
     }
 }
+html{
+    scrollbar-color: #634f7b #ddd;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar{
+        width: 0.5vw;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #45f882;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        background-clip: content-box;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #ddd;
+    }
+}
 $primaryFont: 'Poppins';
 $primaryColor: #45f882;
 $secondaryColor: #fff;
@@ -1837,6 +1853,21 @@ header{
         }
         p{
             font-weight: 600;
+        }
+    }
+    .tour_match{
+        position: relative;
+        @include minwidth(992px){
+            &::after{
+                position: absolute;
+                content: '';
+                width: 1px;
+                height: 75px;
+                background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+                top: 50%;
+                transform: translateY(-50%);
+                left: -40%;
+            }
         }
     }
     .tour_team{
