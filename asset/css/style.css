@@ -2460,6 +2460,19 @@ header .trigger i {
 .gaming_dhop .gs_right {
   width: 70%;
 }
+@media screen and (min-width: 576px) {
+  .gaming_dhop .left_holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gaming_dhop .left_holder {
+    display: block;
+  }
+}
 .gaming_dhop .left_holder .sInput {
   display: flex;
   justify-content: space-between;
@@ -2478,6 +2491,22 @@ header .trigger i {
 }
 .gaming_dhop .lCBox:not(:first-child) {
   margin-top: 20px;
+}
+@media screen and (min-width: 576px) {
+  .gaming_dhop .lCBox {
+    width: 49%;
+  }
+  .gaming_dhop .lCBox:not(:first-child) {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gaming_dhop .lCBox {
+    width: 100%;
+  }
+  .gaming_dhop .lCBox:not(:first-child) {
+    margin-top: 20px;
+  }
 }
 .gaming_dhop .lCBox input {
   border: none;
@@ -2689,7 +2718,13 @@ header .trigger i {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .gaming_dhop .prev_next_box {
+    margin-bottom: 0px;
+  }
 }
 .gaming_dhop .prev_next_box a {
   width: 40px;
