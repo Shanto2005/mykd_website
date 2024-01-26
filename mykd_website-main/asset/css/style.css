@@ -2129,7 +2129,7 @@ header .trigger i {
 }
 
 .contact_section {
-  background-color: #0F161B;
+  background-color: #0f161b;
   padding: 30px 0px;
 }
 @media screen and (min-width: 768px) {
@@ -2241,7 +2241,7 @@ header .trigger i {
 }
 
 .blog_section {
-  background-color: #0F161B;
+  background-color: #0f161b;
   padding: 30px 0px;
 }
 @media screen and (min-width: 768px) {
@@ -2441,7 +2441,7 @@ header .trigger i {
 }
 
 .gaming_dhop {
-  background-color: #0F161B;
+  background-color: #0f161b;
   padding: 30px 0px;
 }
 @media screen and (min-width: 768px) {
@@ -2475,9 +2475,6 @@ header .trigger i {
 .gaming_dhop .lCBox {
   border: 1px solid #333;
   border-radius: 5px;
-}
-.gaming_dhop .lCBox:not(:first-child) {
-  margin-top: 20px;
 }
 .gaming_dhop .lCBox input {
   border: none;
@@ -2522,14 +2519,7 @@ header .trigger i {
   padding-left: 17px;
 }
 .gaming_dhop .lCBox .gs_Tittle h5 {
-  font-size: 16px;
   font-family: "Barlow";
-  font-weight: 700;
-}
-@media screen and (min-width: 992px) {
-  .gaming_dhop .lCBox .gs_Tittle h5 {
-    font-size: 18px;
-  }
 }
 .gaming_dhop .lCBox .gs_Tittle::after {
   content: "\f0da";
@@ -2542,177 +2532,6 @@ header .trigger i {
   top: 50%;
   transform: translateY(-50%);
 }
-.gaming_dhop .productBox {
-  background-color: #171D24;
-  padding: 20px;
-}
-.gaming_dhop .pTop_wrap {
-  margin-bottom: 20px;
-}
-.gaming_dhop .pTop_wrap p {
-  color: #adb0b2;
-  margin-bottom: 0;
-}
-.gaming_dhop .pTop_wrap select {
-  width: 200px;
-  background-image: -webkit-linear-gradient(90deg, rgba(18, 21, 24, 0.4902) 0%, rgba(31, 41, 53, 0.36078) 100%);
-  background-color: #171d24;
-  border: 1px solid #333333;
-  color: #adb0b2;
-  font-size: 14px;
-  height: 50px;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-}
-.gaming_dhop .pTop_wrap select:focus {
-  outline: unset;
-}
-.gaming_dhop .pTop_wrap select option {
-  color: #adb0bc;
-}
-.gaming_dhop .pb_holder {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-.gaming_dhop .pb_holder:not(:last-child) {
-  padding-bottom: 15px;
-}
-.gaming_dhop .p_imgBox img {
-  width: 80px;
-  height: 80px;
-  border-radius: 5px;
-  border: 1px solid #333;
-}
-.gaming_dhop .p_deteils {
-  margin-left: 20px;
-}
-.gaming_dhop .p_deteils h6 {
-  cursor: pointer;
-  transition: 0.3s;
-  margin-bottom: 7px;
-}
-.gaming_dhop .p_deteils h6:hover {
-  color: #45f882;
-}
-.gaming_dhop .p_deteils p {
-  color: #adb0b2;
-  margin-bottom: 0;
-}
-.gaming_dhop .pCaterogy_Box {
-  background-color: #171D24;
-  padding: 20px;
-}
-.gaming_dhop .ct_holder {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.gaming_dhop .ct_holder:not(:last-child) {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #333333;
-}
-.gaming_dhop .ct_holder:hover p {
-  color: #fff;
-}
-.gaming_dhop .ct_holder p {
-  color: #adb0b2;
-  transition: 0.3s;
-  margin-bottom: 0;
-}
-.gaming_dhop .ct_holder h6 {
-  color: #adb0b2;
-  margin-bottom: 0;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.gaming_dhop .ct_holder h6:hover {
-  color: #fff;
-}
-.gaming_dhop .p_holder {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 93%, 93% 100%, 20% 100%, 0 100%, 0% 20%);
-          clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 93%, 93% 100%, 20% 100%, 0 100%, 0% 20%);
-  background-color: #1A232D;
-  padding: 20px;
-  border-radius: 8px;
-}
-.gaming_dhop .p_img {
-  height: 260px;
-}
-.gaming_dhop .p_img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 8px;
-}
-.gaming_dhop .p_border {
-  height: 1px;
-  background: radial-gradient(circle, rgb(245, 246, 249) 0%, rgba(255, 255, 255, 0) 100%);
-  margin: 20px 0px;
-  opacity: 0.15;
-}
-.gaming_dhop .p_det {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.gaming_dhop .p_det h6 {
-  margin-bottom: 0;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.gaming_dhop .p_det h6:hover {
-  color: #45f882;
-}
-.gaming_dhop .p_det p {
-  color: #45f882;
-  margin-bottom: 0;
-}
-.gaming_dhop .p_idntfyr {
-  margin-top: 3px;
-}
-.gaming_dhop .p_idntfyr p {
-  color: #adb0b2;
-  transition: 0.3s;
-  cursor: pointer;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-.gaming_dhop .p_idntfyr p:hover {
-  color: #45f882;
-}
-.gaming_dhop .prev_next_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  text-align: center;
-}
-.gaming_dhop .prev_next_box a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #adb0b2;
-  transition: 0.3s;
-  border-radius: 5px;
-  border: 1px solid #adb0b2;
-}
-.gaming_dhop .prev_next_box a:hover {
-  color: #201f2a;
-  background-color: #45f882;
-  border: 1px solid #45f882;
-}
-.gaming_dhop .prev_next_box a:not(:last-child) {
-  margin-right: 10px;
-}
-.gaming_dhop .prev_next_box .active {
-  color: #201f2a;
-  background-color: #45f882;
-  border: 1px solid #45f882;
+.gaming_dhop .price_filter {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/mmenu-light.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                    <a href="index.html"><img src="asset/images/mkyd_header.png" alt="logo"></a>
+                </div>
+                <div class="header_menu">
+                    <div class="dmenu_box">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="tournament.html">TOURNAMENT</a></li>
+                            <li><a href="page.html">PAGES</a></li>
+                            <li><a href="news.html">NEWS</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search_wrepper">
+                    <div class="mmenu_box">
+                        <a href="#mykd_menu" class="mmenuButton"><i class="fa-solid fa-bars"></i></a>
+                        <nav id="mykd_menu">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT US</a></li>
+                                <li><a href="tournament.html">TOURNAMENT</a></li>
+                                <li><a href="#">PAGES</a></li>
+                                <li><a href="news.html">NEWS</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="inputBox lg-ms-3 lg-me-3">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="signup_box">
+                        <button class="bttn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- searchModalStart -->
+    <div class="search_modal">
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="modal_form d-flex" role="search">
+                            <input class="form-control searchInput" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- searchModalEnd -->
+
+    <div class="ab_banner_section">
+        <div class="bgImg" style="background-image: url('asset/images/about_bg01.jpg');">
+            <div class="container">
+                <div class="ab_bannerContent">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 text-start">
+                            <div class="banner_holder">
+                                <div class="banner_tittle">
+                                    <h2>TOURNAMENT</h2>
+                                </div>
+                                <div class="bread_cumbs">
+                                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">TOURNAMENT</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-first order-lg-0 text-lg-end">
+                            <div class="sp_img_box">
+                                <img src="asset/images/breadcrumb_img03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tournament_card">
+        <div class="container">
+            <div class="tour_content">
+                <div class="row tourCard_row justify-content-lg-center justify-content-xl-between row-gap-4">
+                    <div class="tourCard_col col-md-6 col-lg-5 col-xl-4">
+                        <div class="card">
+                            <div id="countdown" class="countdown">
+                                <ul>
+                                    <li><span id="days"></span>DAY</li>
+                                    <li><span id="hours"></span>HOUR</li>
+                                    <li><span id="minutes"></span>MIN</li>
+                                    <li><span id="seconds"></span>SEC</li>
+                                </ul>
+                            </div>
+                            <div class="tour_caption text-center">
+                                <h6>TOURNAMENT</h6>
+                                <h4>OF WEEKLY</h4>
+                            </div>
+                            <div class="tour_price">
+                                <i class="fa-solid fa-trophy"></i>
+                                <p>3 PRIZE PLACES</p>
+                            </div>
+                            <div class="tour_price_box">
+                                <ul>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament01.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>BLACK NINJA</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament02.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>FOXTIE MAX</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament03.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>HOLAM DOXE</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="top_pricePath">
+                                <div class="path_price">
+                                    <p><i class="fa-solid fa-trophy"></i>$5000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tourCard_col col-md-6 col-lg-5 col-xl-4">
+                        <div class="card mdl_card">
+                            <div id="countdown" class="countdown">
+                                <ul>
+                                    <li><span id="daysscnd"></span>DAY</li>
+                                    <li><span id="hoursscnd"></span>HOUR</li>
+                                    <li><span id="minutesscnd"></span>MIN</li>
+                                    <li><span id="secondsscnd"></span>SEC</li>
+                                </ul>
+                            </div>
+                            <div class="tour_caption text-center">
+                                <h6>TOURNAMENT</h6>
+                                <h4 class="mdl_h4">OF WEEKLY</h4>
+                            </div>
+                            <div class="tour_price">
+                                <i class="fa-solid fa-trophy"></i>
+                                <p>3 PRIZE PLACES</p>
+                            </div>
+                            <div class="tour_price_box">
+                                <ul>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament01.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>BLACK NINJA</p>
+                                        </div>
+                                        <div class="price_box mdl_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament02.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>FOXTIE MAX</p>
+                                        </div>
+                                        <div class="price_box mdl_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament03.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>HOLAM DOXE</p>
+                                        </div>
+                                        <div class="price_box mdl_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="top_pricePath mdil_path">
+                                <div class="path_price">
+                                    <p><i class="fa-solid fa-trophy"></i>$5000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tourCard_col col-md-6 col-lg-5 col-xl-4">
+                        <div class="card">
+                            <div id="countdown" class="countdown">
+                                <ul>
+                                    <li><span id="daysthird"></span>DAY</li>
+                                    <li><span id="hoursthird"></span>HOUR</li>
+                                    <li><span id="minutesthird"></span>MIN</li>
+                                    <li><span id="secondsthird"></span>SEC</li>
+                                </ul>
+                            </div>
+                            <div class="tour_caption text-center">
+                                <h6>TOURNAMENT</h6>
+                                <h4>OF WEEKLY</h4>
+                            </div>
+                            <div class="tour_price">
+                                <i class="fa-solid fa-trophy"></i>
+                                <p>3 PRIZE PLACES</p>
+                            </div>
+                            <div class="tour_price_box">
+                                <ul>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament01.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>BLACK NINJA</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament02.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>FOXTIE MAX</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="player_img">
+                                            <img src="asset/images/tournament03.jpg" alt="tour1">
+                                        </div>
+                                        <div class="player_name">
+                                            <p>HOLAM DOXE</p>
+                                        </div>
+                                        <div class="price_box">
+                                            <P>$ 7500 <i class="fa-solid fa-bolt"></i></P>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="top_pricePath">
+                                <div class="path_price">
+                                    <p><i class="fa-solid fa-trophy"></i>$5000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="active_tournament">
+        <div class="bg_img" style="background-image: url('asset/images/tournament_bg.jpg');">
+            <div class="container">
+                <div class="tour_content">
+                    <div class="sub_tittle text-lg-start">
+                        <p>TOURNAMENT LIST</p>
+                    </div>
+                    <div class="tittle text-lg-start">
+                        <h3>ACTIVE TOURNAMENT</h3>
+                        <a href="#">EXPLORE MORE</a>
+                    </div>
+                    <div class="tourcard_holder">
+                        <div class="tour_card">
+                            <div class="row row-gap-4 justify-content-between align-items-center">
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_team">
+                                        <img src="asset/images/tournament_thumb01.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_teamname tour_match">
+                                        <h4>FOXTIE MAX</h4>
+                                        <p class="mb-0"><i class="fa-solid fa-circle"></i>ONLINE</p>
+                                    </div>                                    
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_price tour_match">
+                                        <h6>PRIZE</h6>
+                                        <p class="mb-0"><i class="fa-solid fa-trophy"></i>$7500</p>
+                                    </div>                                    
+                                </div>
+                                <div class="col-6 col-lg-2">                                    
+                                    <div class="tour_time tour_match">
+                                        <h6>TIME</h6>
+                                        <p class="mb-0"><i class="fa-solid fa-clock"></i>10H : 15M</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-2">                                    
+                                    <div class="tour_live tour_match">
+                                        <a href="#">LIVE NOW<i class="fa-regular fa-circle-play ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour_card">
+                            <div class="row row-gap-4 justify-content-between align-items-center">
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_team">
+                                        <img src="asset/images/tournament_thumb02.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_teamname tour_match">
+                                        <h4>FOXTIE MAX</h4>
+                                        <p class="mb-0"><i class="fa-solid fa-circle"></i>ONLINE</p>
+                                    </div>                                    
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_price tour_match">
+                                        <h6>PRIZE</h6>
+                                        <p class="mb-0"><i class="fa-solid fa-trophy"></i>$7500</p>
+                                    </div>                                    
+                                </div>
+                                <div class="col-6 col-lg-2">                                    
+                                    <div class="tour_time tour_match">
+                                        <h6>TIME</h6>
+                                        <p class="mb-0"><i class="fa-solid fa-clock"></i>10H : 15M</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-2">                                    
+                                    <div class="tour_live tour_match">
+                                        <a href="#">LIVE NOW<i class="fa-regular fa-circle-play ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour_card">
+                            <div class="row row-gap-4 justify-content-between align-items-center">
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_team">
+                                        <img src="asset/images/tournament_thumb03.png" alt="tour3">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_teamname tour_match">
+                                        <h4>FOXTIE MAX</h4>
+                                        <p class="mb-0"><i class="fa-solid fa-circle"></i>ONLINE</p>
+                                    </div>                                    
+                                </div>
+                                <div class="col-6 col-lg-2">
+                                    <div class="tour_price tour_match">
+                                        <h6>PRIZE</h6>
+                                        <p class="mb-0"><i class="fa-solid fa-trophy"></i>$7500</p>
+                                    </div>                                    
+                                </div>
+                                <div class="col-6 col-lg-2">                                    
+                                    <div class="tour_time tour_match">
+                                        <h6>TIME</h6>
+                                        <p class="mb-0"><i class="fa-solid fa-clock"></i>10H : 15M</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-2">                                    
+                                    <div class="tour_live tour_match">
+                                        <a href="#">LIVE NOW<i class="fa-regular fa-circle-play ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_country">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-6">
+                        <h3>DHUBAI</h3>
+                    </div>
+                    <div class="col-6 text-end">
+                        <h3>FRANCE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_top">
+            <div class="container">
+                <div class="footertop_content">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-sm-6 col-lg-2">
+                            <div class="footerHolder">
+                                <div class="heading">
+                                    <h4>INFORMATION</h4>
+                                </div>
+                                <div class="info_box">
+                                    <ul>
+                                        <li><a href="#">+971 333 222 557</a></li>
+                                        <li><a href="#">info@exemple.com</a></li>
+                                        <li>Firestone building, Sharjah Ain</li>
+                                        <li>Box 265, Dubai</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 order-first order-lg-0 logo_col">
+                            <div class="footerHolder">
+                                <div class="imgbox heading">
+                                    <a href="#">
+                                        <img src="asset/images/mkyd_header.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="menu_box text-start text-lg-center">
+                                    <ul>
+                                        <li><a href="index.html">HOME</a></li>
+                                        <li><a href="#">ABOUT US</a></li>
+                                        <li><a href="#">TOURNAMENT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-2 text-start text-lg-end">
+                            <div class="footerHolder">
+                                <div class="heading">
+                                    <h4>HEAD OFFICE</h4>
+                                </div>
+                                <div class="info_box">
+                                    <ul>
+                                        <li><a href="#">+971 333 222 557</a></li>
+                                        <li><a href="#">info@exemple.com</a></li>
+                                        <li>Firestone building, Sharjah Ain</li>
+                                        <li>Box 265, Dubai</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="container">
+                <div class="row justify-content-center justify-content-lg-between text-center text-lg-start">
+                    <div class="col-12 col-lg-6">
+                        <div class="copyright_box mt-2 mt-lg-0">
+                            <p>COPYRIGHT © 2023 - ALL RIGHTS RESERVED BY <span>SHANTO</span></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6  order-first order-lg-0">
+                        <div class="link_box">
+                            <ul>
+                                <li><a href="#">CONTATC US</a></li>
+                                <li><a href="#">JOIN OUR TEAM</a></li>
+                                <li><a href="#">PRIVICY POLICY</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/mmenu-light.js"></script>
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>

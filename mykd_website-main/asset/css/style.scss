@@ -65,10 +65,8 @@ html{
 }
 $primaryFont: 'Poppins';
 $primaryColor: #45f882;
-$scnd_p:#0F161B;
 $secondaryColor: #fff;
 $thirdcolor: #ffbe18;
-$gray: #adb0b2;
 
 $allHeading: 'h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6';
 #{$allHeading} {
@@ -1914,7 +1912,7 @@ header{
 
 // .contact_section Page_Start
 .contact_section{
-    background-color: $scnd_p;
+    background-color: #0f161b;
     padding: 30px 0px;
     @include minwidth(768px){
         padding: 50px 0px;
@@ -2023,7 +2021,7 @@ header{
 
 // .blog_section page Start
 .blog_section{
-    background-color: $scnd_p;
+    background-color: #0f161b;
     padding: 30px 0px;
     @include minwidth(768px){
         padding: 50px 0px;
@@ -2231,7 +2229,7 @@ header{
 
 ///Page////
 .gaming_dhop{
-    background-color: $scnd_p;
+    background-color: #0f161b;
     padding: 30px 0px;
     @include minwidth(768px){
         padding: 50px 0px;
@@ -2262,9 +2260,6 @@ header{
     .lCBox{
         border: 1px solid #333;
         border-radius: 5px;
-        &:not(:first-child){
-            margin-top: 20px;
-        }
         input{
             border: none;
             padding: 5px 10px;
@@ -2297,12 +2292,7 @@ header{
             margin: 15px 0px 15px 20px;
             padding-left: 17px;
             h5{
-                font-size: 16px;
                 font-family: "Barlow";
-                font-weight: 700;
-                @include minwidth(992px){
-                    font-size: 18px;
-                }
             }
             &::after{
                 content: "\f0da";
@@ -2317,180 +2307,9 @@ header{
             }
         }
     }
-    .productBox{
-        background-color: #171D24;
-        padding: 20px;
+    .search_box{
     }
-    .pTop_wrap{
-        margin-bottom: 20px;
-        p{
-            color: $gray;
-            margin-bottom: 0;
-        }
-        select{
-            width: 200px;
-            background-image: -webkit-linear-gradient(90deg, rgba(18, 21, 24, 0.4902) 0%, rgba(31, 41, 53, 0.36078) 100%);
-            background-color: #171d24;
-            border: 1px solid #333333;
-            color: $gray;
-            font-size: 14px;
-            height: 50px;
-            border-radius: 5px;
-            padding: 10px;
-            cursor: pointer;
-            &:focus {
-                outline: unset;
-            }
-            option{
-                color: #adb0bc;
-            }
-        }
-    }
-    .pb_holder{
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        &:not(:last-child){
-            padding-bottom: 15px;
-        }
-    }
-    .p_imgBox{
-        img{
-            width: 80px;
-            height: 80px;
-            border-radius: 5px;
-            border: 1px solid #333;
-        }
-    }
-    .p_deteils{
-        margin-left: 20px;
-        h6{
-            cursor: pointer;
-            transition: 0.3s;
-            margin-bottom: 7px;
-            &:hover{
-                color: $primaryColor;
-            }
-        }
-        p{
-            color: $gray;
-            margin-bottom: 0;
-        }
-    }
-    .pCaterogy_Box{
-        background-color: #171D24;
-        padding: 20px;
-    }
-    .ct_holder{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &:not(:last-child){
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #333333;
-        }
-        &:hover{
-            p{
-                color: $secondaryColor;
-            }
-        }
-        p{
-            color: $gray;
-            transition: 0.3s;
-            margin-bottom: 0;
-        }
-        h6{
-            color: $gray;
-            margin-bottom: 0;
-            transition: 0.3s;
-            cursor: pointer;
-            &:hover{
-                color: $secondaryColor;
-            }
-        }
-    }
-    .p_holder{
-        clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 93%, 93% 100%, 20% 100%, 0 100%, 0% 20%);
-        background-color: #1A232D;
-        padding: 20px;
-        border-radius: 8px;
-    }
-    .p_img{
-        height: 260px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-    }
-    .p_border{
-        height: 1px;
-        background: radial-gradient(circle, rgb(245, 246, 249) 0%, rgba(255, 255, 255, 0) 100%);
-        margin: 20px 0px;
-        opacity: 0.15;
-    }
-    .p_det{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        h6{
-            margin-bottom: 0;
-            transition: 0.3s;
-            cursor: pointer;
-            &:hover{
-                color: $primaryColor;
-            }
-        }
-        p{
-            color: $primaryColor;
-            margin-bottom: 0;
-        }
-    }
-    .p_idntfyr{
-        margin-top: 3px;
-        p{
-            color: $gray;
-            transition: 0.3s;
-            cursor: pointer;
-            font-size: 14px;
-            margin-bottom: 0;
-            &:hover{
-                color: $primaryColor;
-            }
-        }
-    }
-    .prev_next_box{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        text-align: center;
-        a{
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: $gray;
-            transition: 0.3s;
-            border-radius: 5px;
-            border: 1px solid $gray;
-            &:hover{
-                color: #201f2a;
-                background-color: $primaryColor;
-                border: 1px solid $primaryColor;
-            }
-            &:not(:last-child){
-                margin-right: 10px;
-            }
-        }
-        .active{
-            color: #201f2a;
-            background-color: $primaryColor;
-            border: 1px solid $primaryColor;
-        }
+    .price_filter{
+        margin-top: 20px;
     }
 }
